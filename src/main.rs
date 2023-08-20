@@ -12,7 +12,7 @@ fn print_hello() -> Result<()> {
         text: "Hello world".to_owned(),
     };
 
-    let json = serde_json::to_string(&message)?;
+    let json = serde_json::to_string_pretty(&message)?;
 
     println!("{}", json);
 
